@@ -1,0 +1,93 @@
+*{
+  font-family: roboto;
+}
+
+body{
+  background-color: rgb(231, 231, 231);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#canvas{
+  position: absolute;
+}
+
+#title-block {
+  position: absolute;
+  border: 2px solid black;
+  border-radius: 2px;
+  background-color: white;
+  color: black;
+  padding: 1px 10px 3px 10px;
+  text-align: center;
+  top: 3%;
+}
+
+
+@media screen and (min-width: 601px) {
+  #title {font-size: 2.5rem}
+  #description {font-size: 1rem}
+  #canvas{top: 14.5%}
+  #legend{top: 86%}
+  #data-source {
+    font-size: .7rem;
+    top: 96%;
+  }
+  #signature {top: 97%}
+}
+
+@media screen and (max-width: 600px) {
+  #title {font-size: 1.5rem}
+  #description {font-size: .8rem}
+  #canvas{top: 11.5% }
+  #legend{top: 83%}
+  #data-source {
+    font-size: .5rem;
+    top: 95%;
+  }
+  #signature {top: 91%}
+}
+
+#title {
+  font-weight: bold;
+}
+
+#legend{
+  position: absolute;
+  height: 92px;
+  width: 240px;
+  font-size: .7rem;
+  justify-content: center;
+}
+
+#tooltip {
+  position: absolute;
+  border: 1px solid grey;
+  border-radius: 3px;
+  color: black;
+  background-color: rgb(228, 245, 240);
+  padding: 5px;
+  font-size: .8rem;
+}
+
+.tile:hover {fill:rgb(148, 245, 213)}
+
+#data-source {
+  padding: 2px 5px;
+  position: absolute;
+  color: rgb(56, 56, 56);
+  left: 1%
+}
+
+#signature {
+  padding: 2px 5px;
+  position: absolute;
+  color: rgb(56, 56, 56);
+  border-radius: 3px;
+  background-color:  lightgrey;
+  right: 3%;
+  top: 96%;
+  font-size: .8rem;
+}

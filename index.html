@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FCC D3 Tree Map Diagram</title>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <svg id="canvas">
+  </svg>
+
+  <div id="title-block">
+    <text id="title">World's Most Popular Movies<br></text>
+    <text id="description">Top 95 Sorted by Genre and Revenue</text>
+  </div>
+
+  <svg id="legend">
+    <rect y="0" x="0" width="32" height ="17" fill="black"></rect>
+    <rect y="1" x="1" width="30" height ="15" fill="#bc7d52" class="legend-item"></rect>
+    <rect y="25" x="0" width="32" height ="17" fill="black"></rect>
+    <rect y="26" x="1" width="30" height ="15" fill="#33ae81" class="legend-item"></rect>
+    <rect y="50" x="0" width="32" height ="17" fill="black"></rect>
+    <rect y="51" x="1" width="30" height ="15" fill="slateblue" class="legend-item"></rect>
+    <rect y="75" x="0" width="32" height ="17" fill="black"></rect>
+    <rect y="76" x="1" width="30" height ="15" fill="pink" class="legend-item"></rect>
+    <rect y="0" x="150" width="32" height ="17" fill="black"></rect>
+    <rect y="1" x="151" width="30" height ="15" fill="#f3c911" class="legend-item"></rect>
+    <rect y="25" x="150" width="32" height ="17" fill="black"></rect>
+    <rect y="26" x="151" width="30" height ="15" fill="#e04138" class="legend-item"></rect>
+    <rect y="50" x="150" width="32" height ="17" fill="black"></rect>
+    <rect y="51" x="151" width="30" height ="15" fill="royalblue" class="legend-item"></rect>
+    <text y="13" x="38" fill="black">Action</text>
+    <text y="38" x="38" fill="black">Drama</text>
+    <text y="63" x="38" fill="black">Adventure</text>
+    <text y="88" x="38" fill="black">Family</text>
+    <text y="13" x="188" fill="black">Animation</text>
+    <text y="38" x="188" fill="black">Comedy</text>
+    <text y="63" x="188" fill="black">Biography</text>
+  </svg>
+
+  <div id="data-source">
+    <span>Movie data from <br>
+      <a href="https://cdn.freecodecamp.org/testable-projects-fcc/data/tree_map/movie-data.json">
+        https://cdn.freecodecamp.org/testable-projects-fcc/data/tree_map/movie-data.json
+      </a>
+    </span>
+  </div>
+
+  <div id="signature">
+    <small><i>by David Rhoton, 2021</i></small>
+  </div>
+
+</body>
+<script defer src="script.js"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
